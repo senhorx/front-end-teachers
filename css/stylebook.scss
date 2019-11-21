@@ -1,0 +1,49 @@
+body {
+    min-height: 2000px;
+    background-color: white;
+  }
+
+
+@import  '../node_modules/bootstrap/scss/bootstrap';
+
+
+  .roundbutton{
+    background-color: white;
+    display:block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid darkgrey;
+    text-align: center;
+  }
+
+  .roundbutton-colors{
+    background-color: white;
+    display:block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid darkgrey;
+    text-align: center;
+  }
+
+  .color-white{background-color: white;}
+  .color-gray{background-color: darkgray;}
+  .color-dimgray{background-color: dimgray;}
+  .color-black{background-color: black;}
+  .color-darkred{background-color: darkred;}
+  .color-brown{background-color: brown;}
+  .color-olive{background-color: olive;}
+  .color-green{background-color: green;}
+  .color-seagreen{background-color: seagreen;}
+  .color-blue{background-color: blue;}
+  .color-purple{background-color: purple;}
+  .color-violet{background-color: violet;}
+  .color-pink{background-color: pink;}
+  .color-yellow{background-color: yellow;}
+
+  .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+}

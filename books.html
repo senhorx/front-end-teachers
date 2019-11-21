@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TeachersPROtools</title>
+    <!--<link rel="stylesheet" href="css/style.min.css">-->
+    <link rel='stylesheet' id='compiled.css-css'
+        href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.9.0.min.css?ver=4.9.0'
+        type='text/css' media='all' />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/stylebook.min.css">
+</head>
+
+<body id="pagina">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: rgb(98,22,255);">
+        <a href="teacher-myClasses-books.html" class="navbar-brand"><i class="fas fa-chevron-left"
+                style="color: white;"></i></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <hr class="border-left">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" style="color: cornsilk;">My Books
+                    </a>
+                    <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
+                        <input class="form-control mr-sm-2 dropdown-item" type="text" placeholder="Search more books"
+                            aria-label="Search">
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Merry Christimas</a>
+                        <a class="dropdown-item" href="#">More Books</a>
+                    </div>
+                </li>
+            </ul>
+            <img src="images/logo.svg" alt="TeachersProTools" class="img-responsive">
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item avatar dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="images/perfil-teste.jpg" class="rounded-circle z-depth-0" alt="avatar image">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+                        aria-labelledby="navbarDropdownMenuLink-55">
+                        <a class="dropdown-item" href="#">Home Page</a>
+                        <a class="dropdown-item" href="#">My Account</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="btn-group-vertical" style="top: 250px;right: 5px; size: unset;position: fixed;">
+        <button type="button" class="btn btn-primary" id="btn_ZoomIn" style="color: white;"><i
+                class="fas fa-plus"></i></button>
+        <button type="button" class="btn btn-primary " id="btn_ZoomOut" style="color: white;"><i
+                class="fas fa-minus"></i></button>
+        <button type="button" class="btn btn-primary " id="btn_ZoomReset" style="color: white;"><i
+                class="fas fa-undo-alt"></i></button>
+    </div>
+
+    <div class="main" style="padding-top: 60px;">
+        <h3>
+            <center>Titulo</center>
+        </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione distinctio voluptatum placeat ab,
+            architecto sunt dolorem repellendus corrupti amet? Mollitia quas esse omnis facere eveniet! Provident odio
+            excepturi cum?</p>
+    </div>
+
+    <!--Button Help-->
+    <button class="btn color-white" type="button" style="bottom: 10px;left: 5px; position: fixed;">
+        <i class="far fa-question-circle"></i>
+    </button>
+
+    <!--Button Share-->
+    <button class="btn color-white" type="button" data-toggle="modal" data-target="#modalShare"
+        style="bottom: 10px;left: 50px; position: fixed;">
+        <i class="fas fa-share-alt"></i>
+    </button>
+
+    <!--Modal Share-->
+    <div class="modal fade" id="modalShare" tabindex="-1" role="dialog" aria-labelledby="titleShare" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleShare">Share Book</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Button Answers-->
+    <div class="btn-group dropup"  style="bottom: 10px;right: 60px; position: fixed;">
+        <button type="button" class="btn  color-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Answers Menu
+        </button>
+        <div class="dropdown-menu">
+            <div class="form-group">
+                <label for="selectAnswers">Answers Menu</label>
+                <select class="custom-select" size="3" id="selectAnswers" style="overflow: hidden;">
+                    <option selected >No Answers</option>
+                    <option >Correct Answers</option>
+                  </select>
+            </div>
+        </div>
+      </div>
+
+    <!--Button Chat-->
+    <button class="btn color-white" id="btn_open_chat" type="button" style="bottom: 10px;right: 5px; position: fixed;">
+        <i class="far fa-comment-dots"></i>
+    </button>
+
+    <!--Card Chat-->
+    <div class="card card-chat"
+        style="width: 250px;height: 250px; bottom: 5px; right: 5px; position: fixed; display: none;">
+        <div class="card-header">
+            <img src="images/perfil-teste.jpg" class="rounded-circle z-depth-0" alt="avatar image"
+                style="width: 40px; height: 40px;">
+            <span>Christian Carvalho</span>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"
+                        style="width: 225px;"></textarea>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary mb-2 mt-2">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-link icon-close" id="btn_close_chat" type="button">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+
+    <!--Button open  Card Tools-->
+    <button class="btn color-white" id="btn_open" type="button"
+        style="top: 200px;left: 5px; size: unset;display: none; position: fixed;">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!--Card Tools-->
+    <div class="card card-tools ml-1" style="top: 200px;left: 5px; size: unset;width: 280px; position: fixed;">
+        <div class="card-body">
+            <div class="row" style="margin-top: 20px;">
+                <button class="btn roundbutton" type="button" style="font-size: 12px; margin-left: 1px;">
+                    <i class="fab fa-amilia"></i>
+                </button>
+                <button class="btn roundbutton" type="button" style="font-size: 15px; margin-left: 1px;">
+                    <i class="fab fa-amilia"></i>
+                </button>
+                <button class="btn roundbutton" type="button" style="font-size: 18px; margin-left: 1px;">
+                    <i class="fab fa-amilia"></i>
+                </button>
+                <button class="btn roundbutton ml-4" type="button" style="font-size: 18px;">
+                    <i class="fas fa-bold"></i>
+                </button>
+                <button class="btn roundbutton" type="button" style="font-size: 18px;">
+                    <i class="fas fa-italic"></i>
+                </button>
+            </div>
+            <div class="row">
+                <h5 style="margin-left: 110px;">Colors</h5>
+            </div>
+            <div class="row">
+                <button class="btn roundbutton-colors color-white btn-color" type="button" id="white"></button>
+                <button class="btn roundbutton-colors color-gray btn-color" type="button" id="gray"></button>
+                <button class="btn roundbutton-colors color-dimgray btn-color" type="button" id="dimgray"></button>
+                <button class="btn roundbutton-colors color-black btn-color" type="button" id="black"></button>
+                <button class="btn roundbutton-colors color-darkred btn-color" type="button" id="darkred"></button>
+                <button class="btn roundbutton-colors color-brown btn-color" type="button" id="brown"></button>
+                <button class="btn roundbutton-colors color-olive btn-color" type="button" id="olive"></button>
+                <button class="btn roundbutton-colors color-green btn-color" type="button" id="green"></button>
+                <button class="btn roundbutton-colors color-seagreen btn-color" type="button" id="seagreen"></button>
+                <button class="btn roundbutton-colors color-blue btn-color" type="button" id="blue"></button>
+                <button class="btn roundbutton-colors color-purple btn-color" type="button" id="purple"></button>
+                <button class="btn roundbutton-colors color-violet btn-color" type="button" id="violet"></button>
+                <button class="btn roundbutton-colors color-pink btn-color" type="button" id="pink"></button>
+                <button class="btn roundbutton-colors color-yellow btn-color" type="button" id="yellow"></button>
+            </div>
+            <div class="row">
+                <h5 style="margin-left: 110px;">Icons</h5>
+            </div>
+            <div class="row">
+                <button class="btn roundbutton" type="button">
+                    <i class="far fa-smile"></i>
+                </button>
+                <button class="btn roundbutton" type="button">
+                    <i class="far fa-smile-wink"></i>
+                </button>
+                <button class="btn roundbutton" type="button">
+                    <i class="far fa-grin-squint-tears"></i>
+                </button>
+                <button class="btn roundbutton" type="button">
+                    <i class="far fa-smile-beam"></i>
+                </button>
+                <button class="btn roundbutton" type="button">
+                    <i class="far fa-grin-hearts"></i>
+                </button>
+            </div>
+        </div>
+        <button class="btn btn-link icon-close" id="btn_close" type="button">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "TeacherProTools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch css/style.scss css/style.css",
+    "sass-min": "node-sass --watch css/style.scss css/style.min.css --output-style compressed",
+    "sass-book": "node-sass --watch css/stylebook.scss css/stylebook.min.css --output-style compressed",
+    "sass-login": "node-sass --watch css/stylelogin.scss css/stylelogin.min.css --output-style compressed"
+  },
+  
+  "keywords": [],
+  "author": "Christian",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "clipboard": "^2.0.4",
+    "jquery": "^3.4.1",
+    "lesshat": "^4.1.0",
+    "popper.js": "^1.16.0"
+  }
+}
